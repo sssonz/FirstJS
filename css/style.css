@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lavender;
+    font-family: Arial, sans-serif;
+  }
+
+  .block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+    /* Задание 2*/
+    /* Стекломорфная кнопка*/
+  .glass-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .glass-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+    /* Неоморфная кнопка*/
+  .neomorph-button {
+    background: #56b8fa;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 6px 6px 12px #165a8b, -6px -6px 12px #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .neomorph-button:active {
+    box-shadow: inset 6px 6px 12px #165a8b, inset -6px -6px 12px #ffffff;
+  }
+  
+    /* Задание 5*/
+  .click_button {
+    background-color: sandybrown;
+    padding: 15px 30px;
+    margin: 1vw;
+    transition: background-color 0.3s ease, margin 0.3s ease;
+  }
